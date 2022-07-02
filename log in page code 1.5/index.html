@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="error-container">
+      <h3>Error</h3>
+      <ul id="error-list"></ul>
+    </div>
+    <div class="container right-panel-active">
+      <!-- this is for the Log in panel -->
+      <div class="singUp container__form">s
+          <form action="sign up/signup.html" class="form" id="form1">
+              <h3 class="form__title">Sign up</h3>
+              <input id="name-input" type="text" placeholder="Username" class="input" />
+              <span class="line"></span>
+              <input id="email-signup" type="text" placeholder="Email" class="input"  />
+              <span class="line"></span>
+              <input id="password-signup" type="password" placeholder="Password" class="input"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" />
+              <span class="line"></span>
+              <input id="password-conform" type="password" placeholder="Password conform" class="input"  />
+              <span class="line"></span>
+              <label for="terms">
+              <input type="checkbox" id="terms" name="terms">
+              Agree To Terms?
+              </label>
+              <button class="btn">Sign up</button>
+              <a href="/Expnd question/index.html">Commen question</a>
+            </form>
+        </div>
+      
+      <!-- this is for the sign up panel -->
+        <div class="logIn container__form">
+          <form action="login/logIn.html" class="form" id="form2">
+            <h3 class="form__title">Log in</h3>
+            <input id="email-login" type="email" placeholder="Email" class="input"   />
+            <span class="line"></span>
+            <input id="password-login" type="password" placeholder="Password" class="input"  />
+            <span class="line"></span>
+            <a href="#" class="link">forget your password</a>
+            <button class="btn">log in</button>
+          </form>
+        </div>
+
+      <!-- this is for the overlay that move left to right with the click -->
+      <div class="ovarlay-container">
+        <div class="overlay">
+          <div class="overlay-panle panel-right">
+            <button class="btn" id="signUp">Sign Up</button>
+          </div>
+          <div class="overlay-panle panel-left">
+            <button class="btn" id="signIn">log in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
